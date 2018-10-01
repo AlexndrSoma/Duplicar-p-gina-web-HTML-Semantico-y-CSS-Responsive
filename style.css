@@ -24,7 +24,6 @@ body {
     min-width: 400px;
     top: 0;
   padding: 16px;
-  border-radius: 20px;
   margin-right: 100px;
  
 }
@@ -33,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .flex-container > div > div > i{
 border: none;
@@ -67,12 +68,16 @@ color:#db4437;
     flex-basis: 1000px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     .title{
         font-size: 11pt;
         visibility: hidden;
+        height: 0px;
     }
 }
+
+
+
 
 .buttons{
     display: flex;
@@ -84,6 +89,12 @@ color:#db4437;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-flow: row dense;
   margin-top: 120px;
+}
+
+@media screen and (max-width: 800px){
+    .grid-container {
+        margin-top: 50px;
+      }
 }
 
 .grid-item {
